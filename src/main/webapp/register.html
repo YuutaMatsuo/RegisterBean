@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登録画面</title>
+<style>
+	body{
+		text-align:center
+	}
+</style>
+</head>
+<body>
+	<h2>登録情報を入力してください</h2>
+	<form action="/Scope_Project_01/register" method ="post">
+		名前：<input type="text" name="name" size="10"><br>
+		年齢：<input type="radio" name="age" value="child">20歳未満
+			  <input type="radio" name="age" value="adult">20歳以上<br>
+		開発経験：<input type="checkbox" name='lang' value="Java">Java
+				  <input type="checkbox" name='lang' value="Typescript">Typescript
+				  <input type="checkbox" name='lang' value="Ruby">Ruby<br>
+		<input type="submit" value="送信">
+	</form>
+</body>
+</html>
